@@ -294,23 +294,30 @@ figure.wp-block-image.mt-card__icon img {
 .mt-form__note { font-size: 13px; color: var(--mt-muted); }
 
 /* Forminator submit button — paint it to match .mt-btn--primary.
-   Forminator renders a plain <button class="forminator-button-submit">
-   that doesn't carry .wp-element-button, so neither theme.json's
-   elements.button nor .mt-btn touches it. */
+   Forminator ships an ID-scoped rule (#forminator-module-N) for fonts
+   and a 0,4,0 chain for layout, so beating them by selector chain is
+   brittle. !important on the painted properties is intentional. */
 .forminator-button.forminator-button-submit {
-  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-  padding: 14px 26px;
-  border-radius: var(--mt-pill);
-  font-family: inherit; font-weight: 700; font-size: 16px; letter-spacing: .01em;
-  border: 1.5px solid transparent;
-  background: var(--mt-accent); color: #fff;
+  display: inline-flex !important;
+  align-items: center; justify-content: center; gap: 10px;
+  width: auto !important; min-width: 0 !important;
+  padding: 14px 26px !important;
+  border: 1.5px solid transparent !important;
+  border-radius: var(--mt-pill) !important;
+  background: var(--mt-accent) !important;
+  color: #fff !important;
+  font-family: inherit !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  letter-spacing: .01em;
   box-shadow: 0 6px 16px -8px rgba(16,185,129,.55);
   cursor: pointer;
   transition: transform .15s ease, background .15s ease, color .15s ease;
 }
 .forminator-button.forminator-button-submit:hover,
 .forminator-button.forminator-button-submit:focus {
-  background: #0ea673; color: #fff; transform: translateY(-1px);
+  background: #0ea673 !important; color: #fff !important;
+  transform: translateY(-1px);
   outline: none;
 }
 
