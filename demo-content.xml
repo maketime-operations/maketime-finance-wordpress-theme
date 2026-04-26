@@ -58,9 +58,7 @@
 		<link>https://maketime.finance/about/</link>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<excerpt:encoded><![CDATA[We're a small company with a vision to work together with small and medium sized companies, helping them to have squeaky clean data, reconciled accounts and helpful reports. Making time for the things that matter.]]></excerpt:encoded>
-		<content:encoded><![CDATA[<!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column --><div class="wp-block-column"><!-- wp:heading --><h2 class="wp-block-heading">Wendy Laing</h2><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3 class="wp-block-heading">CFO — Finance and Accountant</h3><!-- /wp:heading --><!-- wp:paragraph --><p>A CIMA qualified Management Accountant with over 20 years experience. I love numbers and diving into your accounts to make sure they're clean and reconciled. I want you to trust the reports we provide to give you actionable insights.</p><!-- /wp:paragraph --></div><!-- /wp:column --><!-- wp:column --><div class="wp-block-column"><!-- wp:heading --><h2 class="wp-block-heading">David Laing</h2><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3 class="wp-block-heading">CTO — IT and AI</h3><!-- /wp:heading --><!-- wp:paragraph --><p>An experienced software engineer who's been programming since I was 10. I have a special interest in using AI and IT to find ways to reduce repeatable work and provide useful insights — so we can make time for important things like decision making and coffee.</p><!-- /wp:paragraph --></div><!-- /wp:column --></div>
-<!-- /wp:columns -->]]></content:encoded>
+		<content:encoded><![CDATA[]]></content:encoded>
 		<wp:post_id>13</wp:post_id>
 		<wp:post_date><![CDATA[2025-09-01 09:00:00]]></wp:post_date>
 		<wp:post_name><![CDATA[about]]></wp:post_name>
