@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+	<title>Make Time Finance — Demo Content</title>
+	<link>https://maketime.finance/</link>
+	<description>Starter pages and tips for the Make Time Finance block theme.</description>
+	<pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+	<language>en-GB</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>https://maketime.finance</wp:base_site_url>
+	<wp:base_blog_url>https://maketime.finance</wp:base_blog_url>
+	<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[hello@maketime.finance]]></wp:author_email><wp:author_display_name><![CDATA[Make Time Finance]]></wp:author_display_name><wp:author_first_name><![CDATA[Make Time]]></wp:author_first_name><wp:author_last_name><![CDATA[Finance]]></wp:author_last_name></wp:author>
+
+	<item>
+		<title>Home</title>
+		<link>https://maketime.finance/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>10</wp:post_id>
+		<wp:post_date><![CDATA[2025-09-01 09:00:00]]></wp:post_date>
+		<wp:post_name><![CDATA[home]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+	</item>
+
+	<item>
+		<title>Tips</title>
+		<link>https://maketime.finance/tips/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>11</wp:post_id>
+		<wp:post_date><![CDATA[2025-09-01 09:00:00]]></wp:post_date>
+		<wp:post_name><![CDATA[tips]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+	</item>
+
+	<item>
+		<title>Services</title>
+		<link>https://maketime.finance/services/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<wp:post_id>12</wp:post_id>
+		<wp:post_date><![CDATA[2025-09-01 09:00:00]]></wp:post_date>
+		<wp:post_name><![CDATA[services]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-services]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>About</title>
+		<link>https://maketime.finance/about/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<excerpt:encoded><![CDATA[We're a small company with a vision to work together with small and medium sized companies, helping them to have squeaky clean data, reconciled accounts and helpful reports. Making time for the things that matter.]]></excerpt:encoded>
+		<content:encoded><![CDATA[<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column --><div class="wp-block-column"><!-- wp:heading --><h2 class="wp-block-heading">Wendy Laing</h2><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3 class="wp-block-heading">CFO — Finance and Accountant</h3><!-- /wp:heading --><!-- wp:paragraph --><p>A CIMA qualified Management Accountant with over 20 years experience. I love numbers and diving into your accounts to make sure they're clean and reconciled. I want you to trust the reports we provide to give you actionable insights.</p><!-- /wp:paragraph --></div><!-- /wp:column --><!-- wp:column --><div class="wp-block-column"><!-- wp:heading --><h2 class="wp-block-heading">David Laing</h2><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3 class="wp-block-heading">CTO — IT and AI</h3><!-- /wp:heading --><!-- wp:paragraph --><p>An experienced software engineer who's been programming since I was 10. I have a special interest in using AI and IT to find ways to reduce repeatable work and provide useful insights — so we can make time for important things like decision making and coffee.</p><!-- /wp:paragraph --></div><!-- /wp:column --></div>
+<!-- /wp:columns -->]]></content:encoded>
+		<wp:post_id>13</wp:post_id>
+		<wp:post_date><![CDATA[2025-09-01 09:00:00]]></wp:post_date>
+		<wp:post_name><![CDATA[about]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-about]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Get In Touch Today</title>
+		<link>https://maketime.finance/contact/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<excerpt:encoded><![CDATA[Tell us about your business and the data you'd like to untangle. We'll reply within one working day.]]></excerpt:encoded>
+		<content:encoded><![CDATA[<!-- wp:paragraph --><p>Either email or a call works. We'll always start with an NDA before you share anything sensitive — you can ask for ours or send yours.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p><strong>Email:</strong> <a href="mailto:hello@maketime.finance">hello@maketime.finance</a><br><strong>Office:</strong> 11 St Fintan's Crescent, Dublin, Ireland<br><strong>Hours:</strong> Mon – Fri, 9:00 – 17:30 IST</p><!-- /wp:paragraph --><!-- wp:paragraph --><p><em>Replace this area with a Contact Form 7 / WPForms / Gravity Forms shortcode once the plugin of your choice is installed.</em></p><!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>14</wp:post_id>
+		<wp:post_date><![CDATA[2025-09-01 09:00:00]]></wp:post_date>
+		<wp:post_name><![CDATA[contact]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-contact]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Privacy Policy</title>
+		<link>https://maketime.finance/privacy-policy/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph --><p>Make Time Finance ("we", "us") is committed to protecting your privacy. This policy explains what personal data we collect, why we collect it, and how we use it.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>1. What we collect</h2><!-- /wp:heading --><!-- wp:paragraph --><p>When you contact us via this site, we collect your name, email address, company name (if provided), and the contents of your message. If you become a client, we collect financial records relevant to the engagement, strictly under the terms of a signed NDA.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>2. How we use it</h2><!-- /wp:heading --><!-- wp:paragraph --><p>We use your contact information to reply to your enquiry and, if relevant, to send the occasional newsletter that you have explicitly opted in to receive. Financial records are used solely to provide the agreed service.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>3. Who we share it with</h2><!-- /wp:heading --><!-- wp:paragraph --><p>We do not sell or rent your data. Limited sub-processors (email, hosting, accounting-platform APIs) are used only where necessary and are GDPR compliant.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>4. Your rights</h2><!-- /wp:heading --><!-- wp:paragraph --><p>You may request a copy of, correction to, or deletion of your personal data at any time by emailing <a href="mailto:hello@maketime.finance">hello@maketime.finance</a>.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>5. Retention</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Contact enquiries are retained for 24 months; client records are retained for the period required by Irish tax law (currently 7 years) and deleted thereafter.</p><!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>15</wp:post_id>
+		<wp:post_date><![CDATA[2025-09-01 09:00:00]]></wp:post_date>
+		<wp:post_name><![CDATA[privacy-policy]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-legal]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Cookie Policy</title>
+		<link>https://maketime.finance/cookie-policy/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph --><p>This site uses strictly-necessary cookies to function. No third-party advertising cookies are set without your consent.</p><!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>16</wp:post_id>
+		<wp:post_date><![CDATA[2025-09-01 09:00:00]]></wp:post_date>
+		<wp:post_name><![CDATA[cookie-policy]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-legal]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>Terms of Service</title>
+		<link>https://maketime.finance/terms-of-service/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph --><p>By using this site you agree to these terms. Services are provided subject to a separate signed engagement letter.</p><!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>17</wp:post_id>
+		<wp:post_date><![CDATA[2025-09-01 09:00:00]]></wp:post_date>
+		<wp:post_name><![CDATA[terms-of-service]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:postmeta><wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key><wp:meta_value><![CDATA[page-legal]]></wp:meta_value></wp:postmeta>
+	</item>
+
+	<item>
+		<title>What subscription expenses will my small business incur?</title>
+		<link>https://maketime.finance/tips/subscription-expenses/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph --><p>When running a small business, you will expect to incur monthly costs around the production of your product or service. But there are other administrative monthly costs that can add up quickly and start to make you feel a little out of control.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Basic IT</h2><!-- /wp:heading --><!-- wp:list --><ul><!-- wp:list-item --><li>Email, calendar, spreadsheets — eg: Microsoft 365 — €12</li><!-- /wp:list-item --></ul><!-- /wp:list --><!-- wp:heading --><h2>Finance / Accounting</h2><!-- /wp:heading --><!-- wp:list --><ul><!-- wp:list-item --><li>Accounting software — eg: Xero/QuickBooks — €50</li><!-- /wp:list-item --><!-- wp:list-item --><li>Payroll software — eg: BrightPay — €28</li><!-- /wp:list-item --></ul><!-- /wp:list -->]]></content:encoded>
+		<wp:post_id>100</wp:post_id>
+		<wp:post_date><![CDATA[2025-09-02 09:00:00]]></wp:post_date>
+		<wp:post_name><![CDATA[subscription-expenses]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+	</item>
+
+	<item>
+		<title>Xero vs QuickBooks, which should I choose?</title>
+		<link>https://maketime.finance/tips/xero-vs-quickbooks/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph --><p>Both are solid. Here's a short comparison of the differences that actually matter for Irish and UK small businesses.</p><!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>101</wp:post_id>
+		<wp:post_date><![CDATA[2025-07-15 09:00:00]]></wp:post_date>
+		<wp:post_name><![CDATA[xero-vs-quickbooks]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+	</item>
+
+	<item>
+		<title>Why choose Xero?</title>
+		<link>https://maketime.finance/tips/why-xero/</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<content:encoded><![CDATA[<!-- wp:paragraph --><p>Six reasons we tend to recommend Xero to our clients — from automatic bank feeds to multi-currency.</p><!-- /wp:paragraph -->]]></content:encoded>
+		<wp:post_id>102</wp:post_id>
+		<wp:post_date><![CDATA[2025-05-05 09:00:00]]></wp:post_date>
+		<wp:post_name><![CDATA[why-xero]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+	</item>
+</channel>
+</rss>

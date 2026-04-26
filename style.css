@@ -1,0 +1,19 @@
+/*
+Theme Name: Make Time Finance
+Theme URI: https://maketime.finance/
+Author: Make Time Finance
+Author URI: https://maketime.finance/
+Description: A warm, trustworthy block theme for Make Time Finance — a small finance consultancy that untangles your books and migrates you to Xero or QuickBooks. Cream palette, emerald accent, Noto Serif Georgian type. Full Site Editing with theme.json, templates and block patterns for the home, services, about, contact, tips (blog), search, 404 and legal pages.
+Version: 1.0.0
+Requires at least: 6.4
+Tested up to: 6.5
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: maketime-finance
+Tags: full-site-editing, block-patterns, block-styles, business, blog, one-column, two-columns, custom-menu, custom-logo, featured-images, threaded-comments, translation-ready
+*/
+
+/* Theme-wide CSS that can't live in theme.json lives in assets/theme.css,
+   enqueued from functions.php. This file exists so WordPress recognises
+   the folder as a theme. */

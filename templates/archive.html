@@ -1,0 +1,44 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"section","className":"mt-page-head","layout":{"type":"constrained","contentSize":"1180px"}} -->
+<section class="wp-block-group mt-page-head">
+	<!-- wp:paragraph {"align":"center","className":"mt-eyebrow","textColor":"accent","style":{"typography":{"fontSize":"13px","textTransform":"uppercase","fontWeight":"700","letterSpacing":"0.14em"}}} -->
+	<p class="has-text-align-center mt-eyebrow has-accent-color has-text-color" style="font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase">Blog</p>
+	<!-- /wp:paragraph -->
+	<!-- wp:query-title {"type":"archive","textAlign":"center"} /-->
+	<!-- wp:term-description {"textAlign":"center"} /-->
+</section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","className":"mt-section","style":{"spacing":{"padding":{"top":"56px","bottom":"88px"}}},"layout":{"type":"constrained","contentSize":"1180px"}} -->
+<section class="wp-block-group mt-section" style="padding-top:56px;padding-bottom:88px">
+
+	<!-- wp:query {"queryId":2,"query":{"perPage":12,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","inherit":true}} -->
+	<div class="wp-block-query">
+
+		<!-- wp:post-template {"className":"mt-tips-grid","layout":{"type":"grid","columnCount":3}} -->
+			<!-- wp:group {"className":"mt-tip","tagName":"article"} -->
+			<article class="wp-block-group mt-tip">
+				<!-- wp:post-date {"format":"Y-m-d","className":"mt-tip__date","textColor":"accent"} /-->
+				<!-- wp:post-title {"level":3,"isLink":true} /-->
+				<!-- wp:post-excerpt {"excerptLength":26} /-->
+			</article>
+			<!-- /wp:group -->
+		<!-- /wp:post-template -->
+
+		<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"40px"}}}} -->
+			<!-- wp:query-pagination-previous /-->
+			<!-- wp:query-pagination-numbers /-->
+			<!-- wp:query-pagination-next /-->
+		<!-- /wp:query-pagination -->
+
+		<!-- wp:query-no-results -->
+			<!-- wp:paragraph {"align":"center"} --><p class="has-text-align-center">No posts yet — check back soon.</p><!-- /wp:paragraph -->
+		<!-- /wp:query-no-results -->
+	</div>
+	<!-- /wp:query -->
+
+</section>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
