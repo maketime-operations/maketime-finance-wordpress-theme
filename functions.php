@@ -104,3 +104,27 @@ function maketime_finance_register_pattern_categories() {
 	);
 }
 add_action( 'init', 'maketime_finance_register_pattern_categories' );
+
+
+/**
+ * Print a generator meta tag so the active theme version is trivial to
+ * verify after a deploy: `curl -s https://maketime.finance/ | grep maketime`.
+ */
+function maketime_finance_print_version_meta() {
+	$version = wp_get_theme()->get( 'Version' );
+	printf(
+		'<meta name="generator" content="maketime-finance %s">' . "\n",
+		esc_attr( $version )
+	);
+}
+add_action( 'wp_head', 'maketime_finance_print_version_meta' );
+
+
+/**
+ * [mt_theme_version] shortcode — resolves to the active theme version,
+ * so the footer can show it without hardcoding.
+ */
+function maketime_finance_version_shortcode() {
+	return esc_html( wp_get_theme()->get( 'Version' ) );
+}
+add_shortcode( 'mt_theme_version', 'maketime_finance_version_shortcode' );
