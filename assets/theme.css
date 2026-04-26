@@ -338,3 +338,69 @@ p  { margin: 0 0 1em; }
 /* Legal */
 .mt-legal { max-width: 760px; margin: 0 auto; padding: 48px var(--mt-gutter) 80px; }
 .mt-legal h2 { margin-top: 1.8em; }
+
+/* ─── Mobile (≤ 880px) ───────────────────────────────────────────────
+   Constrained block-theme groups don't get horizontal padding by
+   default; on narrow viewports their children render edge-to-edge.
+   Add gutters to every full-bleed band so text/cards don't kiss the
+   viewport edge. */
+@media (max-width: 880px) {
+  .mt-page-head,
+  .mt-section,
+  .mt-privacy,
+  .mt-hero,
+  .mt-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .mt-privacy__card { padding: 22px 20px; font-size: 16px; }
+  .mt-newsletter { padding: 28px 22px; }
+  .mt-form { padding: 24px 20px; }
+  .mt-testimonial { padding: 24px 20px; }
+  .mt-article { padding: 48px 20px 64px; }
+  .mt-legal { padding: 36px 20px 64px; }
+  .mt-404 { padding: 64px 20px; }
+
+  /* Cards / grids: tighten internal padding so text breathes */
+  .mt-card { padding: 24px 22px; }
+  .mt-tip { padding: 22px 20px; }
+
+  /* Page header heading scales down a touch more aggressively */
+  .mt-page-head { padding-top: 48px; padding-bottom: 36px; }
+  .mt-page-head h1 { font-size: clamp(26px, 7vw, 34px); }
+  .mt-page-head p { font-size: 16px; }
+
+  /* Footer: keep grid single-col, tighten vertical rhythm */
+  .mt-footer { padding-top: 48px; padding-bottom: 24px; }
+  .mt-footer__grid { gap: 28px; }
+  .mt-footer__bottom { margin-top: 36px; flex-direction: column; gap: 6px; }
+  .mt-footer__bottom p { text-align: center; }
+}
+
+/* ─── Header (≤ 720px) ───────────────────────────────────────────────
+   On small screens the in-header CTA crowds the menu links, forcing
+   them onto multiple awkward rows. Drop the redundant CTA (Contact
+   is already in the nav) and tighten link spacing. */
+@media (max-width: 720px) {
+  .mt-header__inner { gap: 12px; padding: 12px 0; }
+  .mt-nav { gap: 0; margin-left: auto; }
+  .mt-nav__list { gap: 0; flex-wrap: wrap; justify-content: flex-end; }
+  .mt-nav a:not(.mt-btn):not(.wp-block-button__link) {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  .mt-nav .wp-block-buttons { display: none; }
+  .mt-logo__mark img { height: 44px; }
+}
+
+/* ─── Hero stacking (≤ 720px) ────────────────────────────────────────
+   Stack the hero columns and shrink the wordmark image so the headline
+   takes the lead. */
+@media (max-width: 720px) {
+  .mt-hero { padding: 32px 20px; }
+  .mt-hero > .wp-block-columns { gap: 20px; }
+  .mt-hero__mark img { width: 140px; }
+  .mt-hero__body h1 { font-size: 26px; text-align: center; }
+  .mt-hero__lede { font-size: 17px; text-align: center; }
+  .mt-hero__cta { justify-content: center; }
+}
