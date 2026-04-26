@@ -1,18 +1,27 @@
-<!-- wp:group {"tagName":"header","className":"mt-header","layout":{"type":"constrained","contentSize":"1180px"}} -->
-<header class="wp-block-group mt-header">
-	<!-- wp:group {"className":"mt-header__inner","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<!-- wp:group {"className":"mt-header","layout":{"type":"constrained","contentSize":"1180px"}} -->
+<div class="wp-block-group mt-header">
+	<!-- wp:group {"className":"mt-header__inner","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 	<div class="wp-block-group mt-header__inner">
 
 		<!-- wp:group {"className":"mt-logo","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
 		<div class="wp-block-group mt-logo">
-			<!-- wp:site-logo {"width":56} /-->
+			<!-- wp:image {"width":"56px","sizeSlug":"full","className":"mt-logo__mark"} -->
+			<figure class="wp-block-image is-resized mt-logo__mark"><a href="/"><img src="/wp-content/themes/maketime-finance/assets/img/logo.svg" alt="Make Time Finance" style="width:56px"/></a></figure>
+			<!-- /wp:image -->
 			<!-- wp:site-title {"level":0,"className":"mt-logo__wordmark"} /-->
 		</div>
 		<!-- /wp:group -->
 
-		<!-- wp:group {"className":"mt-nav","layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
+		<!-- wp:group {"className":"mt-nav","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center","justifyContent":"right"}} -->
 		<nav class="wp-block-group mt-nav" aria-label="Primary">
-			<!-- wp:navigation {"overlayMenu":"mobile","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"},"style":{"typography":{"fontWeight":"600","fontSize":"15px"},"spacing":{"blockGap":"8px"}}} /-->
+			<!-- wp:list {"className":"mt-nav__list","style":{"typography":{"fontWeight":"600","fontSize":"15px"},"spacing":{"blockGap":"8px"}}} -->
+			<ul class="mt-nav__list" style="font-size:15px;font-weight:600">
+				<!-- wp:list-item --><li><a href="/services/">Services</a></li><!-- /wp:list-item -->
+				<!-- wp:list-item --><li><a href="/about/">About</a></li><!-- /wp:list-item -->
+				<!-- wp:list-item --><li><a href="/tips/">Tips</a></li><!-- /wp:list-item -->
+				<!-- wp:list-item --><li><a href="/contact/">Contact</a></li><!-- /wp:list-item -->
+			</ul>
+			<!-- /wp:list -->
 
 			<!-- wp:buttons -->
 			<div class="wp-block-buttons">
@@ -28,5 +37,5 @@
 
 	</div>
 	<!-- /wp:group -->
-</header>
+</div>
 <!-- /wp:group -->

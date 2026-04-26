@@ -94,24 +94,32 @@ p  { margin: 0 0 1em; }
 .mt-header__inner { display: flex; align-items: center; gap: 24px; padding: 14px 0; }
 .mt-logo { display: inline-flex; align-items: center; gap: 14px; text-decoration: none; }
 .mt-logo img { height: 56px; width: auto; }
+.mt-logo__mark { margin: 0; line-height: 0; }
+.mt-logo__mark a { display: inline-block; line-height: 0; }
+.mt-logo__mark img { height: 56px; width: auto; max-width: none; }
+.mt-logo__wordmark a { color: var(--mt-ink); text-decoration: none; }
 .mt-logo__wordmark {
   font-family: 'Noto Serif Georgian', Georgia, serif;
   font-size: 28px; font-weight: 700; color: var(--mt-ink);
   letter-spacing: -.01em; line-height: 1;
 }
 @media (max-width: 720px) { .mt-logo__wordmark { display: none; } }
-.mt-nav { margin-left: auto; display: flex; align-items: center; gap: 8px; }
-.mt-nav a:not(.mt-btn) {
+.mt-nav { margin-left: auto; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.mt-nav__list { list-style: none; padding: 0; margin: 0; display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+.mt-nav__list li { margin: 0; }
+.mt-nav a:not(.mt-btn):not(.wp-block-button__link) {
   color: var(--mt-ink); padding: 10px 14px; border-radius: var(--mt-radius);
-  font-weight: 600; font-size: 15px;
+  font-weight: 600; font-size: 15px; text-decoration: none; display: inline-block;
 }
-.mt-nav a:not(.mt-btn):hover { background: var(--mt-bg-2); color: var(--mt-ink); }
-.mt-nav a.is-current { color: var(--mt-accent); }
+.mt-nav a:not(.mt-btn):not(.wp-block-button__link):hover { background: var(--mt-bg-2); color: var(--mt-ink); }
+.mt-nav a.is-current,
+.mt-nav .current-menu-item > a { color: var(--mt-accent); }
 .mt-btn.mt-btn--primary { color: #fff; }
 .mt-btn.mt-btn--primary:hover { color: #fff; }
 .mt-btn.mt-btn--ghost { color: var(--mt-ink); }
 .mt-btn.mt-btn--ghost:hover { color: var(--mt-bg); }
-.mt-nav .mt-btn { margin-left: 8px; }
+.mt-nav .mt-btn,
+.mt-nav .wp-block-buttons { margin-left: 8px; }
 
 /* Hero — horizontal band: logo left, pitch right, on lighter cream */
 .mt-hero {
@@ -120,14 +128,9 @@ p  { margin: 0 0 1em; }
   padding: 48px 0;
   overflow: hidden;
 }
-.mt-hero .mt-container {
-  display: grid;
-  grid-template-columns: minmax(200px, 280px) 1fr;
-  gap: 56px;
-  align-items: center;
-}
+.mt-hero > .wp-block-columns { align-items: center; gap: 56px; }
 .mt-hero__mark { display: flex; justify-content: center; }
-.mt-hero__mark img { height: 180px; width: auto; }
+.mt-hero__mark img { width: 220px; height: auto; max-width: 100%; }
 .mt-hero__body h1 {
   font-size: 30px;
   margin: 0 0 .7em;
@@ -141,10 +144,9 @@ p  { margin: 0 0 1em; }
   font-size: 20px; color: var(--mt-ink); text-wrap: pretty;
   line-height: 1.45;
 }
-.mt-hero__cta { display: flex; gap: 14px; margin-top: 22px; }
+.mt-hero__cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 22px; }
 @media (max-width: 820px) {
-  .mt-hero .mt-container { grid-template-columns: 1fr; gap: 24px; text-align: center; }
-  .mt-hero__mark img { height: 140px; }
+  .mt-hero__mark img { width: 160px; }
   .mt-hero__body h1, .mt-hero__lede { text-align: center; }
   .mt-hero__cta { justify-content: center; }
 }
@@ -203,10 +205,10 @@ p  { margin: 0 0 1em; }
 .mt-testimonial {
   background: var(--mt-surface); border: 1px solid var(--mt-line);
   border-radius: var(--mt-radius-lg); padding: 48px;
-  display: grid; grid-template-columns: 200px 1fr; gap: 40px;
-  align-items: center; box-shadow: var(--mt-shadow-sm);
+  box-shadow: var(--mt-shadow-sm);
 }
-@media (max-width: 720px) { .mt-testimonial { grid-template-columns: 1fr; padding: 32px; } }
+.mt-testimonial > .wp-block-columns { gap: 40px; align-items: center; }
+@media (max-width: 720px) { .mt-testimonial { padding: 32px; } }
 .mt-testimonial__logo {
   background: var(--mt-bg); border-radius: var(--mt-radius);
   aspect-ratio: 1/1; display: grid; place-items: center; padding: 22px;
