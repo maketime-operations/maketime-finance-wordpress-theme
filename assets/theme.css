@@ -191,12 +191,21 @@ p  { margin: 0 0 1em; }
   transition: transform .2s ease, box-shadow .2s ease;
 }
 .mt-card:hover { transform: translateY(-3px); box-shadow: var(--mt-shadow); }
-.mt-card__icon {
-  width: 100%; height: 160px;
+/* WP core injects `.wp-block-image.aligncenter { display: table }`
+   (specificity 0,2,0). Inside display:table, iOS Safari resolves the
+   inner img's max-height:% unreliably and the icon vanishes on real
+   iPhones. Chain `.wp-block-image` so our rule (0,2,1) wins. */
+figure.wp-block-image.mt-card__icon {
   display: flex; align-items: center; justify-content: center;
+  width: 100%; height: 160px;
   margin: 8px 0 18px;
 }
-.mt-card__icon img { max-width: 80%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+figure.wp-block-image.mt-card__icon img {
+  max-width: 80%;
+  max-height: 160px;
+  width: auto; height: auto;
+  object-fit: contain;
+}
 .mt-card h3 { margin: 0; font-size: 22px; }
 .mt-card h4 { margin: 0; font-size: 15px; font-weight: 600; color: var(--mt-accent); }
 .mt-card p { color: var(--mt-ink-2); margin: 6px 0 0; }
