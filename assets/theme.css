@@ -298,9 +298,12 @@ p  { margin: 0 0 1em; }
 /* Footer */
 .mt-footer { background: var(--mt-ink); padding: 72px 0 32px; color: #f5efe3; }
 .mt-footer__grid { display: grid; grid-template-columns: 1fr 1.4fr 1.2fr; gap: 40px; align-items: start; }
-/* WP's flow-layout rule adds margin-block-start to siblings; cancel it so
-   the three column headers align at the top of their grid cells. */
-.mt-footer__grid > * { margin-block-start: 0; margin-top: 0; }
+/* WP injects ":root :where(.is-layout-flow) > * { margin-block-start: 1.5rem }"
+   inline in <head>. With equal specificity (0,1,0) and theme.css loading first,
+   WP wins and the 2nd/3rd columns get a 24px top margin, pushing their
+   headers below "Menu". Chain the WP layout class to bump specificity to (0,2,0)
+   so our zeroing rule wins regardless of source order. */
+.mt-footer__grid.wp-block-group-is-layout-flow > * { margin-block-start: 0; margin-top: 0; }
 @media (max-width: 880px) { .mt-footer__grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .mt-footer__grid { grid-template-columns: 1fr; } }
 .mt-footer h4 { font-size: clamp(18px, 0.95rem + 0.65vw, 22px); text-transform: none; letter-spacing: 0; color: #f5efe3; margin: 0 0 14px; font-weight: 700; }
