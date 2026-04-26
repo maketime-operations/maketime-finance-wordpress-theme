@@ -14,11 +14,28 @@
 
 set -euo pipefail
 
-REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 WP_DIR=/tmp/wp
 DL_DIR=/tmp/wp-dl
 WP_VERSION=6.5
 THEME_SLUG=maketime-finance
+THEME_REPO=maketime-operations/maketime-finance-wordpress-theme
+
+# Locate the theme source. When this script runs from inside a git
+# checkout (the normal case), use that. When it's piped from curl
+# (cloud env bootstrap, before any checkout exists), clone the theme
+# into a stable path so the rest of the script can symlink it in.
+if [ -n "${BASH_SOURCE[0]:-}" ] && [ -f "${BASH_SOURCE[0]}" ]; then
+	REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+else
+	REPO_DIR=/tmp/maketime-finance-theme-src
+	if [ ! -d "${REPO_DIR}/.git" ]; then
+		echo "==> Cloning ${THEME_REPO} into ${REPO_DIR}"
+		git clone --depth 1 "https://github.com/${THEME_REPO}.git" "${REPO_DIR}"
+	else
+		echo "==> Updating ${REPO_DIR}"
+		git -C "${REPO_DIR}" pull --ff-only origin main
+	fi
+fi
 
 # GitHub mirrors (wordpress.org is sometimes blocked by sandbox allowlists).
 WP_TARBALL="https://github.com/WordPress/WordPress/archive/refs/tags/${WP_VERSION}.tar.gz"

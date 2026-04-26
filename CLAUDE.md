@@ -34,6 +34,21 @@ cd /tmp/wp && php -d error_reporting='E_ALL & ~E_DEPRECATED' \
 curl -sSL http://127.0.0.1:8080/  # smoke-test
 ```
 
+The script is idempotent — re-running is a no-op once everything is in place.
+It also has a fallback: if invoked via `curl … | bash` (the cloud env
+bootstrap path, where the repo isn't checked out yet), it clones the theme
+into `/tmp/maketime-finance-theme-src` and symlinks that as the active theme
+instead. So the same script works in both contexts.
+
+For Claude Code Cloud environments, set the **Setup script** field to:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/maketime-operations/maketime-finance-wordpress-theme/main/scripts/dev-setup.sh | bash
+```
+
+That way the cloud env always pulls the latest setup script from `main` —
+no need to update the env config when the script changes.
+
 After editing theme files, flush the WP cache (`cd /tmp/wp && wp cache flush
 --allow-root`) and re-fetch. For visual diffs, use Playwright via
 `/tmp/screenshot.mjs` (write one if missing — see prior session transcripts).
